@@ -40,6 +40,28 @@ export default function Dashboard() {
     : 0
 
   return (
+    <>
+      {/* Breadcrumb — outside PDF capture area */}
+      <nav
+        aria-label="Breadcrumb"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2"
+      >
+        <ol className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400">
+          <li>
+            <a
+              href="https://www.buckshot-consulting.com/portfolio/"
+              className="hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+            >
+              Portfolio
+            </a>
+          </li>
+          <li aria-hidden="true" className="text-gray-300 dark:text-gray-600">›</li>
+          <li className="text-gray-800 dark:text-gray-200 font-medium" aria-current="page">
+            Real Estate Dashboard
+          </li>
+        </ol>
+      </nav>
+
     <div id="dashboard-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
 
       {/* Header */}
@@ -98,6 +120,7 @@ export default function Dashboard() {
       {/* Listings Table */}
       <PropertyTable listings={safeListings} />
     </div>
+    </>
   )
 }
 
