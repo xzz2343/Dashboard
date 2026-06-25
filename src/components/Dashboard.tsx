@@ -49,7 +49,7 @@ export default function Dashboard() {
         <ol className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400">
           <li>
             <a
-              href="https://www.buckshot-consulting.com/portfolio/"
+              href="https://www.buckshot-consulting.com/resume/"
               className="hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
             >
               Portfolio
