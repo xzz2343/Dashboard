@@ -52,7 +52,7 @@ export default function Dashboard() {
               href="https://www.buckshot-consulting.com/resume/"
               className="hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
             >
-              Portfolio
+              Experience
             </a>
           </li>
           <li aria-hidden="true" className="text-gray-300 dark:text-gray-600">›</li>
